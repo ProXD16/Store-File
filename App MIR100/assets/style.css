@@ -1,0 +1,16 @@
+#draw-control-graph {
+  z-index: 1000; /* Đảm bảo graph nằm trên cùng */
+  pointer-events: auto; /* Cho phép graph nhận các sự kiện click */
+  position: relative; /* Thiết lập position */
+  width: 100%; /* Thiết lập width */
+  height: 80vh; /* Thiết lập height */
+}
+
+#draw-control-graph * {
+  pointer-events: auto; /* Cho phép tất cả các thành phần con của graph nhận các sự kiện click */
+}
+
+/* Nếu graph nằm trong một container, hãy thử đặt overflow: visible; cho container */
+.container {
+  overflow: visible;
+}
